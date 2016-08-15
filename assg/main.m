@@ -41,3 +41,12 @@ plotGiniIndex(dataSamples,numberOfClasses);
 fprintf('\nGini Indexing Done.\n\n');
 fprintf('Program paused. Press enter to continue.\n');
 pause;
+
+%% =================== Part 2: Gini Index ======================
+
+load('eclatInput.mat');
+minSupp = 2;
+EcLat(A,minSupp);
+fprintf('\n Eclat Algorithm Done.\n\n');
+fprintf('Program paused. Press enter to continue.\n');
+pause;
