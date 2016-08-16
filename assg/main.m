@@ -38,11 +38,21 @@ dataSamples = 1000;
 numberOfClasses = 256;
 plotGiniIndex(dataSamples,numberOfClasses);
 
+fprintf('\nGini Indexing Graph Done.\n\n');
+fprintf('Program paused. Press enter to continue.\n');
+pause;
+
+
+%Caculation
+M = getMatrix();
+[gini, giniAtt, gainAtt] = getGini(M)
+
 fprintf('\nGini Indexing Done.\n\n');
 fprintf('Program paused. Press enter to continue.\n');
 pause;
 
-%% =================== Part 2: Gini Index ======================
+
+%% =================== Part 3: ECLat  ======================
 
 load('eclatInput.mat');
 minSupp = 2;
